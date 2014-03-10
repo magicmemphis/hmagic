@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>MidSouthGIS : MAGIC Web Site</title>
+       <link rel="stylesheet" href="css/style.css"/>
+       <link rel="stylesheet" href="css/normalize.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  .ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  </style>
+  <script>
+  $(function() {
+    var progressbar = $( "#progressbar" ),
+      progressLabel = $( ".progress-label" );
+ 
+    progressbar.progressbar({
+      value: false,
+      change: function() {
+        progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+      },
+      complete: function() {
+        progressLabel.text( "Complete!" );
+      }
+    });
+ 
+    function progress() {
+      var val = progressbar.progressbar( "value" ) || 0;
+ 
+      progressbar.progressbar( "value", val + 1 );
+ 
+      if ( val < 99 ) {
+        setTimeout( progress, 100 );
+      }
+    }
+ 
+    setTimeout( progress, 3000 );
+  });
+  </script>
+
+ 
+<div id="progressbar"><div class="progress-label">Loading...</div></div>
+	<script>
+   
+
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+<a name="Home"></a>
+ 
+ </head> 
+	
+<body>
+<div id="slide1">
+		<div class="content">
+	
+<header id="header">
+	<div class="content">
+	<div id="container">
+<div id="container2">		
+            <div class="mainHeader"> 
+    <nav>
+      <ul>
+      	<li><a href="#Home">Home</a></li>
+		<li><a href="#About us">About us</a></li>
+<uL>
+		<li><a href="Home">Home</a></li>
+		<li><a href="board.html">Meet the Board</a></li>
+		<li><a href="goals.html">Goals</a></li>
+		<li><a href="ori.html">Origins</a></li>
+		<li><a href="bylaws.html">ByLaws</a></li>
+		<li><a href="mee.html">Meeting Minutes</a></li>
+		<ul>
+		<li><a href="board.html">Home</a></li>
+		<li><a href="goals.html">2013</a></li>
+		<li><a href="ori.html">2012</a></li></ul>
+
+		<li><a href="tra.html">Training</a></li>
+		<li><a href="pre.html">Presentations</a></li>
+</uL>
+
+		<li><a href="#Calendar">Calendar</a></li>
+		<li><a href="#Membership">Membership</a></li>
+		<ul><a href="http://midsouthgis.org/Join/Membership_Form.pdf">JOIN NOW!!</a></ul>
+		<li><a href="#Scholarship">Scholarship</a></li>
+		<ul>
+		<li><a href="board.html">Rules</a></li>
+		<li><a href="goals.html">Application</a></li>
+		<li><a href="ori.html">Scoring</a></li></ul>
+		<li><a href="#Blog">Blog</a></li>
+		<li><a href="http://www.tngic.org">Conference</a></li>
+    </ul></nav></div></div></div>
+
+<div id="logo"><a href=""> 
+<img src="img/MAGIC_Logo_sm.png" alt="MAGIC Logo" width="400" height="300"></a>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("h1").hide();
+  
+  $("h1").fadeIn(2000);
+});
+</script>
+</div>
+
+<aside class="top-sidebar">
+          
+          <a href="http://www.facebook.com/MAGICMemphis?ref=ts" target="_blank">
+			<img border="0" src="img/facebook.png" alt="MAGIC on Facebook" width="50" height="50">
+			</a>
+			<a href="https://twitter.com/GISMemphis" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @GISMemphis</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</aside>
+
+
+<div id="copyright"><a href="http://harrisonawitt.com/">Copyright 2014, Memphis Area Geographic Information Council</a></div> 
+<div style="position:fixed;left:50px;font-size:30px;" class="main"><a href="#Home">Scroll to top</a></div> 
+
+    <div id="container">
+<div id="container2">
+	<div id="navigation">
+		<ul>
+
+
+</div>
+</div>
+</div>
+
+</header>
+	
+	
+
+            <h1>Welcome to the home of<div style="color:#33cccc;font-size:75px;">MAGIC... </div>The Memphis Area Geographic Information Council</h1>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+  $(document).ready(function() {
+    
+    $("h1").fadeIn();
+    $("h2").hide();
+    $("p").hide();
+    $("h3").hide();
+    $(".mainheader").hide();
+    $("aside").hide();
+    $("a").hide();
+    
+});
+$(document).click(function() {    
+    $("aside").show(2000);
+    $("p").show(2000);
+    $("h3").show(2000);
+    $("h2").show(2000);
+    $(".mainheader").show(2000);
+    $("a").show(2000);
+
+  });
+</script>  
+
+
+		<p>
+			MAGIC is a not for profit organization of professionals, users and interested individuals in the field of Geographic Information Systems.  Established in the fall of 2003, MAGIC provides an educational forum for interested parties to get together and share their GIS knowledge and experiences at our monthly meetings and to broaden their exposure at the Annual GIS Conference every November.</p>
+		    <p>Headquartered in Shelby County, TN, MAGIC attracts members from the entire Midsouth region including west Tennessee, north Mississipi and east Arkansas; roughly a one hundred mile radius around Memphis (Although membership is open to anyone from anywhere). 
+			<br><br>MAGIC meetings are open to the public and are announced on our event calendar.</p>
+		    <div id="magic5"> </div>
+		     <h3>Mission Statement</h3>
+			<p>To Promote the profession and education of GIS in the Memphis Area, providing training opportunities and awarding GIS student scholarships, coordinating GIS advocacy, and generally promoting appreciation and participation of GIS to all interested parties - all are goals of MAGIC. </p>
+           <div id="magic6"></div>
+	       <div id="magic7"> </div>
+		</div> 
+    </div> </div>
+<a name="About us">About us</a>
+	<div id="slide2">
+	
+		<div class="content" >
+            <div class="aboutus">
+		    <h1 class="aboutus2">About Us</h1>
+		  
+		  <h2 From the MAGIC President...<br> Welcome! Let's learn a bit about MAGIC... </h2>
+		<p>We often hear how GIS has been used by organizations to utilize resources, increase productivity, and even save lives. The uses are incredible and endless, yet what i find even more amazing is the adaptability of this technology. The same analysis technique can be used by totally different organizations in separate industries.<br><br>
+
+This is what makes the Memphis Area Geographic Information Council more than just a users group. MAGIC is an incredible resource for students, end-users and GIS professionals.Though our members work within different industries, the technology and ideas are very much transferable. Our mission is GIS advocacy in the form of sharing this technology and our experiences within the group and beyond.<br><br>
+
+I’m proud to be a member of this organization and I’m honored to serve as the 2014 president. As president, it is my goal to expand our student outreach within the STEM education coalition and 4-H organization.!<br><br>
+
+Please join us at one of our bi-monthly meetings and consider attending our conference in November.<br><br>
+
+Sincerely,
+</p>
+<p style="font-style: bold">Justin Abart<br>2014 MAGIC President
+		</div> 
+		</div> 
+    </div> 
+	
+	<a name="Calendar">Calendar</a>
+   <div id="slide3">
+   <h1>This is supposed to be the Calendar</h1>
+		<div class="content">
+			   <div class="calendar">
+		       </div></div></div>
+	
+	
+	<a name="Membership">Membership</a>
+	<div id="slide4">
+	
+		<div class="content">
+              <div class="membership">
+		    <h1>Membership has its priveliges!</h1><p>Members like you make MAGIC special -- an educational charity organization dedicated to promoting GIS and providing GIS education to the whole region. Click the Join Now link to the left or bottom of this page to get your Membership form, today!</p>
+<h2>Mission Statement</h2><p>To Promote the profession and education of GIS in the Memphis Area, providing training opportunities and awarding GIS student scholarships, coordinating GIS advocacy, and generally promoting appreciation and participation of GIS to all interested parties - all are goals of MAGIC.</p>
+<a href="http://midsouthgis.org/Join/Membership_Form.pdf">JOIN NOW!</a></div></div></div>
+	
+	<a name="Scholarship">Scholarship</a>
+	<div id="slide5">
+	
+		<div class="content">
+           <div class="scholarship">
+		   <div id="more">
+		   <h1>Scholarship Information</h1>
+		<h2>Supporting the growth of GIS Knowledge</h2>
+		<p>
+			MAGIC is pleased to be able to offer student academic scholarships since 2013.  Our commitment to education continues by supporting the new generations of GIS professionals.  This is yet another way MAGIC gives back to the communities it serves.
+		</p>
+	</div>
+	<div id="content">
+		<h2>MAGIC giving back... <br> to the next generation of GIS professionals</h2>
+		<p>
+			Our generous members and sponsors have made it possible to offer academic scholarships since 2013.  We are proud to support the new generation of GIS professionals through our Student Scholarship Program.
+		</p>
+		
+		<h3>Purpose</h3>
+			<p>Education is a central component of the Memphis Area Geographic Information Council’s (MAGIC) mission.  The purpose of the MAGIC Academic Scholarship program is to encourage and support students’ education through the completion of commendable GIS projects.  
+MAGIC hopes to award one $2000 scholarship annually, available to any qualifying undergraduate student enrolled in a college or university in areas served by MAGIC.</p></div></div></div></div>
+
+ <a name="Blog">Blog</a>
+    <div id="slide6">
+   
+		<div class="content">
+           <div class="blog">
+		    <h1>CLICK ON THE GLOBE FOR OUR BLOG!</h1>
+<a href="http://midsouthgis.org/magicblog">
+<img style=position: fixed; src="img/mag.jpg" alt="BLOG" width="1000px" height="400"></a></h1>
+
+		   
+		  
+		  </div> 
+		 
+		</div> 
+		
+
+    </div> 
+
+<a name="Conference">Conference</a>
+    <div id="slide7">
+    
+		<div class="content">
+           <div class="conference">
+		    <h1 class="conference2">The next MAGIC Conference date and location is yet to be determined.</h1>
+		    <h2>Other Conferences</h2>
+		  </div> 
+		
+		</div> 
+		
+
+    </div> 
+	
+
+  
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>MidSouthGIS : MAGIC Web Site</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+
+  
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> 
+<img src="img/MAGIC_Logo_sm.png" alt="MAGIC Logo" width="300" height="225"></a></div>
+<aside class="top-sidebar">
+          <a style="font-color: #ffffff"> See MAGIC on Facebook and Twitter</a>
+          <a href="http://www.facebook.com/MAGICMemphis?ref=ts" target="_blank">
+			<img border="0" src="img/facebook.png" alt="MAGIC on Facebook" width="50" height="50">
+			</a>
+			<a href="https://twitter.com/GISMemphis" class="twitter-follow-button" data-show-count="false" data-size="x-large">Follow @GISMemphis</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</aside>
+<div id="copyright"><a href="http://harrisonawitt.com/">Copyright Harrison Witt, 2014</a></div>  
+<div id="container">
+<div id="container2">
+	<div id="navigation">
+		<ul>
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active">Home</a></li>
+		<li><a href="#slide2">About us</a></li>
+		<li><a href="#slide3">Calendar</a></li>
+		<li><a href="#slide4">Membership</a></li>
+		<li><a href="#slide5">Scholarship</a></li>
+		<li><a href="#slide6">Blog</a></li>
+		<li><a href="#slide7">Conference</a></li>
+		
+	</ul>
+	
+
+</nav>
+
+</div>
+</div>
+</div>
+<h1>Membership has its priveliges!</h1><p>Members like you make MAGIC special -- an educational charity organization dedicated to promoting GIS and providing GIS education to the whole region. Click the Join Now link to the left or bottom of this page to get your Membership form, today!</p>
+<h2>Mission Statement</h2><p>To Promote the profession and education of GIS in the Memphis Area, providing training opportunities and awarding GIS student scholarships, coordinating GIS advocacy, and generally promoting appreciation and participation of GIS to all interested parties - all are goals of MAGIC.</p>
